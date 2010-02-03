@@ -1,0 +1,11 @@
+<object id="videoContent" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="320" height="240">
+  <param name="movie" value="{{ player_url }}" />
+  <param name="flashvars" value="config={'autoPlay':false,'loop':false,'autoBuffering':true,'initialScale':'scale','videoFile':'{{ video_url }}'}" />
+  <param name="allowFullScreen" value="true" />
+<!--[if !IE]>-->
+  <object type="application/x-shockwave-flash" data="{{ player_url }}" width="320" height="240" allowFullScreen="true">
+    <param name="flashvars" value="config={'autoPlay':false,'loop':false,'autoBuffering':true,'initialScale':'scale','videoFile':'{{ video_url }}'}" />  
+
+    </object>
+<!--<![endif]-->
+</object>
